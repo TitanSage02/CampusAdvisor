@@ -1,7 +1,5 @@
 # CampusAdvisor 🏫💬
 
-![License](https://img.shields.io/github/license/TitanSage02/CampusAdvisor) ![GitHub last commit](https://img.shields.io/github/last-commit/TitanSage02/CampusAdvisor)
-
 CampusAdvisor est un bot conversationnel conçu pour aider les nouveaux bacheliers à s'orienter dans le choix de leurs études supérieures. Le bot s'appuie sur une technique de *Retrieval-Augmented Generation (RAG)*, exploitant une base de données locale des universités pour fournir des réponses personnalisées. Grâce à son interface développée avec **Streamlit**, les utilisateurs peuvent interagir facilement avec le bot et explorer les options académiques.
 
 ---
