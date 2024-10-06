@@ -5,10 +5,12 @@ import streamlit as st
 import warnings
 warnings.filterwarnings("ignore", category=FutureWarning)
 
+import numpy as np
+
 import os, tempfile, glob, random
 from pathlib import Path
 from getpass import getpass
-import numpy as np
+
 from itertools import combinations
 from langchain.memory import ConversationSummaryBufferMemory,ConversationBufferMemory # type: ignore
 
@@ -54,9 +56,18 @@ from langchain.retrievers.document_compressors import EmbeddingsFilter # type: i
 from langchain.retrievers import ContextualCompressionRetriever
 from langchain_community.document_loaders import TextLoader
 
+
+
+# Envrionnments variables loading
+from dotenv import load_dotenv
+load_dotenv()
+google_api_key = os.getenv("GOOGLE_API_KEY")
+
+# Compilation of data
 directory = "data"
 def compile_txt_files_to_string(directory):
     compiled_content = []
+    
     # Parcourir tous les fichiers dans le dossier donné
     for filename in os.listdir(directory):
         if filename.endswith(".txt"):
@@ -67,7 +78,7 @@ def compile_txt_files_to_string(directory):
                 compiled_content.append(file.read())
 
     # Combiner tous les contenus en une seule chaîne
-    return "\n\n\n".join(compiled_content)
+    return "\n\n\".join(compiled_content)
 
 filepath = None
 with open(f"{directory}/data.txt", "w", encoding="utf-8") as file:
@@ -98,13 +109,13 @@ def select_embeddings_model(LLM_service="Google"):
     if LLM_service == "Google":
         embeddings = GoogleGenerativeAIEmbeddings(
             model="models/embedding-001",
-            google_api_key="AIzaSyB7QNidgdZNZTWSvxDXCcTNxCWfXZS_wqo",
+            google_api_key=google_api_key,
             timeout=500 # type: ignore
         ) 
         
     if LLM_service == "HuggingFace":
         embeddings = HuggingFaceInferenceAPIEmbeddings(
-            api_key="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",
+            api_key="",
             model_name="sentence-transformers/all-MiniLM-L12-v2"
         )
 
@@ -160,7 +171,7 @@ def Vectorstore_backed_retriever(vectorstore,search_type="similarity", k=17, sco
 
 base_retriever_google = Vectorstore_backed_retriever(vector_store_google, "similarity", k=25)
 
-def instantiate_LLM(LLM_provider="HuggingFace",api_key="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", temperature=0.5, top_p=0.95, model_name=None):
+def instantiate_LLM(LLM_provider="HuggingFace",api_key="", temperature=0.5, top_p=0.95, model_name=None):
     """Instantiate LLM in Langchain.
     Parameters:
         LLM_provider (str): the LLM provider; in ["OpenAI","Google","HuggingFace"]
@@ -179,6 +190,7 @@ def instantiate_LLM(LLM_provider="HuggingFace",api_key="hf_qacSNZvozCoeQfQCkxpbR
     #             "top_p": top_p
     #         }
     #     )
+
     if LLM_provider == "Google":
         llm = ChatGoogleGenerativeAI(
             google_api_key=api_key,
@@ -256,7 +268,7 @@ def answer_template(language="french"):
     
     """
 
-    #print("\n\n\n\nTemplate : {tempate}\n\n\n\n")
+    # print("\n\n\n\nTemplate : {template}\n\n\n\n")
 
     return template
 
@@ -348,16 +360,16 @@ def custom_ConversationalRetrievalChain(
     conversational_retriever_chain = chain_question | retrieved_documents | chain_answer
 
     print("Conversational retriever chain created successfully!")
-    #print("conversational_retriever_chain : " , conversational_retriever_chain)
+    # print("conversational_retriever_chain : " , conversational_retriever_chain)
     return conversational_retriever_chain,memory
 
 
 chain_gemini, memory_gemini = custom_ConversationalRetrievalChain(
     llm = instantiate_LLM(
-            LLM_provider="Google", api_key="AIzaSyB7QNidgdZNZTWSvxDXCcTNxCWfXZS_wqo", temperature=0.5,model_name="gemini-1.5-pro"),
+            LLM_provider="Google", api_key=google_api_key, temperature=0.5,model_name="gemini-1.5-pro"),
     
     condense_question_llm = instantiate_LLM(
-            LLM_provider="Google", api_key="AIzaSyB7QNidgdZNZTWSvxDXCcTNxCWfXZS_wqo", temperature=0.3, model_name="gemini-1.5-pro"),
+            LLM_provider="Google", api_key=google_api_key, temperature=0.3, model_name="gemini-1.5-pro"),
     
     retriever=base_retriever_google,
     language="french",
@@ -374,7 +386,7 @@ with st.sidebar:
     if reset_button:
         st.session_state.conversation = None
         st.session_state.chat_history = None
-    # "[View the source code](https://github.com/Espe-dev)"
+    # "[View the source code](https://github.com/TitanSage02/CampusAdvisor)"
 st.image('logo.jpeg', width=200)
 
 st.caption("🚀 Bienvenue CampusAdvisor, ton guide universitaire !")

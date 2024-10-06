@@ -1,1 +1,4 @@
 /.vscode
+.env
+.gitattributes
+main.ipynb
