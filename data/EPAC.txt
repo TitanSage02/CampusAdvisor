@@ -1,0 +1,16 @@
+L'École Polytechnique d'Abomey Calavi (EPAC) de l'Université d'Abomey Calavi offre des formations dans les secteurs biologique et industriel.
+    Le secteur biologique inclut : 
+        1. Le Génie de Biologie Humaine (GBH), délivrant une Licence professionnelle et un Master professionnel, accessible avec un BAC C ou D, menant à des carrières de techniciens et ingénieurs de laboratoires d'analyse biomédicale et de recherche.
+        2. Le Génie d'Imagerie Médicale et de Radiobiologie (GIMR), avec des diplômes similaires et les mêmes conditions d'admission, préparant aux professions de techniciens et ingénieurs de radiologie et échographie dans les centres hospitaliers.
+        3. Le Génie de l'Environnement (GEn), offrant des Licences et Masters professionnels, accessibles aux titulaires d'un BAC C ou D, et ouvrant des débouchés dans les services des eaux et forêts et l'assainissement.
+        4. La Production et Santé Animale (PSA), avec les mêmes diplômes et conditions d'admission, menant à des carrières dans les services de développement rural et les productions et santé animale.
+        5. Le Génie de Technologie Alimentaire (GTA), proposant des diplômes professionnels et conditions d'admission similaires , avec des débouchés dans les industries alimentaires, la gestion de restaurants et brasseries, et le contrôle de qualité.
+
+    Dans le secteur industriel, l'EPAC offre :
+        1. Le Génie Civil (GC), délivrant une Licence Sciences Pour l'Ingénieur (L/SPI) et un Diplôme d'Ingénieur de Conception (DIC), accessible avec un BAC C, E, F4, ou D, pour des carrières de chefs de chantiers, chefs de service en entreprise, et techniciens d'étude.
+        2. Le Génie Électrique (GE), avec les mêmes types de diplômes et conditions d'admission, pour des débouchés dans les sociétés d'électricité et les usines.
+        3. Le Génie Mécanique et Énergétique (GME), délivrant également des Licences et Diplôme d'Ingénieur de Conception (DIC), accessibles avec un BAC C, E, F2, ou D, et ouvrant des carrières dans la maintenance industrielle, la fabrication mécanique et la mécanisation agricole.
+        4. Le Génie Informatique et Télécom (GIT), proposant des diplômes similaires, avec les mêmes conditions d'admission, pour des débouchés dans les réseaux de télécom et les usines.
+        5. Le Génie Biomédical (GBM), délivrant des Licences et Diplôme d'Ingénieur de Conception (DIC), accessibles avec un BAC C, E, F2, ou D, et menant à des carrières dans les services biomédicaux des hôpitaux et la maintenance hospitalière.
+        6. La Maintenance Biomédicale et Hospitalière, offrant une Licence professionnelle avec les mêmes conditions d'admission, pour des carrières similaires.
+        7. Enfin, la Mécanisation Agricole, offrant une Licence professionnelle, accessible avec un BAC C, E, F, ou D, et préparant aux carrières dans la maintenance industrielle, la fabrication mécanique, et la mécanisation agricole.

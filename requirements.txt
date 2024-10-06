@@ -1,0 +1,10 @@
+streamlit
+langchain
+langchain-google-genai
+langchain-community
+langchain-core
+chroma
+
+db-sqlite3
+pysqlite3-binary
+chromadb==0.3.29
