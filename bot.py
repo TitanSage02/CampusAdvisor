@@ -141,7 +141,7 @@ def create_vectorstore(embeddings, documents, vectorstore_name):
 vector_store_google = create_vectorstore(
         embeddings=embedding,
         documents = chunks,
-        vectorstore_name="Lead__"
+        vectorstore_name="VectorSpace"
     )
 
 #print("vector_store_google: ",vector_store_google._collection.count()," chunks.")
