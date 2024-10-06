@@ -78,7 +78,7 @@ def compile_txt_files_to_string(directory):
                 compiled_content.append(file.read())
 
     # Combiner tous les contenus en une seule chaîne
-    return "\n\n\".join(compiled_content)
+    return "\n\n".join(compiled_content)
 
 filepath = None
 with open(f"{directory}/data.txt", "w", encoding="utf-8") as file:

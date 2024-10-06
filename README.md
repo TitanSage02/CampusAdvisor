@@ -2,6 +2,9 @@
 
 CampusAdvisor est un bot conversationnel conçu pour aider les nouveaux bacheliers à s'orienter dans le choix de leurs études supérieures. Le bot s'appuie sur une technique de *Retrieval-Augmented Generation (RAG)*, exploitant une base de données locale des universités pour fournir des réponses personnalisées. Grâce à son interface développée avec **Streamlit**, les utilisateurs peuvent interagir facilement avec le bot et explorer les options académiques.
 
+
+> **Tester l'application en ligne** : [CampusAdvisor](https://https://campusadvisor.streamlit.app/)
+
 ---
 
 ## 🎯 Objectif du projet
@@ -20,9 +23,9 @@ Le projet vise à offrir une assistance interactive et contextuelle pour guider 
 ## 📂 Structure du projet
 
 - `bot.py` : Le script principal qui lance l'application Streamlit.
-- `data/` : Ce dossier contient les données sur les universités et filières. Il est possible d'ajouter de nouvelles données ici pour enrichir le bot.
 - `README.md` : Ce document de présentation du projet.
 - `assets/` : Contient les captures d'écran et autres ressources liées à l'interface.
+- `data/` : Ce dossier contient les données sur les universités et filières. Il est possible d'ajouter de nouvelles données ici pour enrichir le bot.
 
 ---
 
@@ -117,9 +120,6 @@ Les contributions sont les bienvenues ! Voici comment participer :
 ## 📄 Licence
 
 Ce projet est sous licence MIT. Consultez le fichier [LICENSE.md](LICENSE.md) pour plus de détails.
-
----
-
 
 ---
 
