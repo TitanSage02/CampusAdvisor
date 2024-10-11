@@ -3,7 +3,7 @@
 CampusAdvisor est un bot conversationnel conçu pour aider les nouveaux bacheliers à s'orienter dans le choix de leurs études supérieures. Le bot s'appuie sur une technique de *Retrieval-Augmented Generation (RAG)*, exploitant une base de données locale des universités pour fournir des réponses personnalisées. Grâce à son interface développée avec **Streamlit**, les utilisateurs peuvent interagir facilement avec le bot et explorer les options académiques.
 
 
-> **Tester l'application en ligne** : [CampusAdvisor](https://https://campusadvisor.streamlit.app/)
+> **Tester l'application en ligne** : [CampusAdvisor](https://campusadvisor.streamlit.app/)
 
 ---
 
