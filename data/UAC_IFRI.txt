@@ -1,6 +1,7 @@
 L'Institut de Formation et de Recherche en Informatique (IFRI) de l'Université d'Abomey Calavi offre une gamme complète de formations spécialisées.
+
 Chaque fillière offre un diplome en lisence, Master et doctorat.
-les baccalauréats C, D, E, F, DTI, WAEC sont recommandés pour cette Institut.
+Les baccalauréats C, D, E, F, DTI, WAEC sont recommandés pour cette Institut.
 Les filières comprennent : 
 1. La filière de Sécurité Informatique (SI), accessible par classement, avec des débouchés en tant qu'auditeur de sécurité, administrateur réseaux et consultant en sécurité des systèmes d'information.
 2. La filière de Génie Logiciel (GL), également accessible par classement, prépare les étudiants à devenir développeurs d'application, ingénieurs logiciel et consultants en génie logiciel.
